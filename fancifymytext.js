@@ -1,5 +1,5 @@
 
-const biggrBtn = document.button.querySelector("#bigger");
+const biggrBtn = document.body.querySelector("#bigger");
 
 function helloAlert(){
     alert("Hello World!");

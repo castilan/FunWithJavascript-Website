@@ -1,2 +1,6 @@
-alert("Hello World!");
-console.log("this file has been reached");
+
+const biggrBtn = document.querySelector("biggerButton");
+
+biggrBtn.addEventListener("click", () => {
+  alert("Hello World!");
+});

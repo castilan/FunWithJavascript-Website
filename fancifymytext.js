@@ -2,9 +2,7 @@
 const biggrBtn = document.querySelector("#biggerButton");
 
 function helloAlert(){
-    return alert("Hello World!");
+    alert("Hello World!");
 }
 
-biggrBtn.addEventListener("click", () => {
-  helloAlert();
-});
+biggrBtn.addEventListener("click", helloAlert);

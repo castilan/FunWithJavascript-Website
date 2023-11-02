@@ -10,6 +10,6 @@ function makeBigger(){
 
 function makeFancy(){
     document.getElementById("innerText").style.fontWeight = 'bold';
-    document.getElementById("innerText").style.backgroundColor = 'purple';
+    document.getElementById("innerText").style.color = 'purple';
 }
 

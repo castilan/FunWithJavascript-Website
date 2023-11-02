@@ -11,10 +11,11 @@ function makeBigger(){
 function makeFancyOrBoring(){
     if(document.getElementById("fancy").checked){
         document.getElementById("innerText").style.fontWeight = 'bold';
+        document.getElementById("boring").checked = 'false';
     }
-    if(document.getElementById("boring").checked){
+    else if(document.getElementById("boring").checked){
         document.getElementById("innerText").style.fontWeight = 'normal';
-
+        document.getElementById("fancy").checked = 'false';
     }
 }
 

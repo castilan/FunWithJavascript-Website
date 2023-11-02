@@ -1,7 +1,7 @@
 
 alert("Hello, world!");
 
-innerText = document.getElementById("innerText");
+const innerText = document.getElementById("innerText");
 
 // shows a pop up with "Hello World!" 
 //assigned to the Bigger button

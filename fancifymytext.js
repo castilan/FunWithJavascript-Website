@@ -10,7 +10,7 @@ function makeBigger(){
 }
 
 function makeFancy(){
-    innerText.style.fontFamily = 'Courier New', monospace;
+    innerText.style.fontFamily = 'Courier New', 'monospace';
     innerText.style.backgroundColor = 'red';
 }
 

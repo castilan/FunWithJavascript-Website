@@ -22,10 +22,12 @@ src="fancifymytext.js"></script>
 		<fieldset id="fancify">
 			<label for="fancify">Fancify</label>
 			<button id="bigger" onclick="makeBigger()">Bigger!</button>
+			
 			<label for="fancy" >FancySchmacy</label>
-			<input type="radio" id="fancy" onchange="makeFancy()">
+			<input type="radio" id="fancy" onchange="makeFancyOrBoring()"/>
+			
 			<label for="boring">BoringBetty</label>
-			<input type="radio" id="boring">
+			<input type="radio" id="boring" onchange="makeFancyOrBoring()"/>
 		</fieldset>
 	</body>
 </html>

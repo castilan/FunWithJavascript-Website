@@ -8,8 +8,13 @@ function makeBigger(){
     document.getElementById("innerText").style.fontSize = '31.92px';
 }
 
-function makeFancy(){
-    document.getElementById("innerText").style.fontWeight = 'bold';
-    document.getElementById("innerText").style.color = 'purple';
+function makeFancyOrBoring(){
+    if(document.getElementById("fancy").checked){
+        document.getElementById("innerText").style.fontWeight = 'bold';
+    }
+    if(document.getElementById("boring").checked){
+        document.getElementById("innerText").style.fontWeight = 'normal';
+
+    }
 }
 

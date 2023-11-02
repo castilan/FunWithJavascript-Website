@@ -14,11 +14,11 @@ function makeFancyOrBoring(){
         text.style.fontWeight = 'bold';
         text.style.color = 'blue';
 
-        document.getElementById("boring").checked = false;
+        //document.getElementById("boring").checked = false;
     }
     else if(document.getElementById("boring").checked){
         text.style.fontWeight = 'normal';
-        document.getElementById("fancy").checked = false;
+        //document.getElementById("fancy").checked = false;
     }
 }
 

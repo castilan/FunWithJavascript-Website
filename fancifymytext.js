@@ -9,7 +9,7 @@ function makeBigger(){
 }
 
 function makeFancy(){
-    document.getElementById("innerText").style.fontFamily = 'Jokerman', 'fantasy';
-    document.getElementById("innerText").style.color = 'purple';
+    document.getElementById("innerText").style.fontFamily = 'Courier New', 'monospace';
+    document.getElementById("innerText").style.backgroundColor = 'purple';
 }
 

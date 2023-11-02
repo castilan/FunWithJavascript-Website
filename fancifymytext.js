@@ -1,13 +1,16 @@
 
 alert("Hello, world!");
 
+innerText = document.getElementById("innerText");
+
 // shows a pop up with "Hello World!" 
 //assigned to the Bigger button
 function makeBigger(){
-    document.getElementById("innerText").style.fontSize = '31.92px';
+    innerText.style.fontSize = '31.92px';
 }
 
 function makeFancy(){
-    document.getElementById("innerText").style.fontFamily = 'Courier New', monospace;
+    innerText.style.fontFamily = 'Courier New', monospace;
+    innerText.style.backgroundColor = 'red';
 }
 

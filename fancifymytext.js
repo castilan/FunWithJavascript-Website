@@ -9,13 +9,16 @@ function makeBigger(){
 }
 
 function makeFancyOrBoring(){
+    const text = document.getElementById("innerText");
     if(document.getElementById("fancy").checked){
-        document.getElementById("innerText").style.fontWeight = 'bold';
-        document.getElementById("boring").checked = 'false';
+        text.style.fontWeight = 'bold';
+        text.style.color = 'blue';
+
+        document.getElementById("boring").checked = false;
     }
     else if(document.getElementById("boring").checked){
-        document.getElementById("innerText").style.fontWeight = 'normal';
-        document.getElementById("fancy").checked = 'false';
+        text.style.fontWeight = 'normal';
+        document.getElementById("fancy").checked = false;
     }
 }
 

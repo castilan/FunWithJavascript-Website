@@ -8,6 +8,6 @@ function makeBigger(){
 }
 
 function makeFancy(){
-    document.getElementById("innerText").style.fontFamily = 'Lucida Handwriting', 'cursive';
+    document.getElementById("innerText").style.fontFamily = 'Papyrus', 'fantasy';
 }
 

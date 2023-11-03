@@ -1,13 +1,14 @@
 
-alert("Hello, world!");
 
 
-// shows a pop up with "Hello World!" 
 //assigned to the Bigger button
 function makeBigger(){
     document.getElementById("innerText").style.fontSize = '31.92px';
 }
 
+//on change for buttons fancy and boring
+//only one radio button can be selected at a time
+// the parameter typeChanged indicates which button has been most recently changed
 function makeFancyOrBoring(typeChanged){
     const text = document.getElementById("innerText");
 
@@ -27,9 +28,15 @@ function makeFancyOrBoring(typeChanged){
     }
 }
 
-function makeUpper(){
+function makeMoo(){
 
-    const textValue = document.getElementById("innerText").value;
+    //makes the value upper case
+    var textValue = document.getElementById("innerText").value;
     document.getElementById("innerText").value = textValue.toUpperCase();
+
+    // adds the suffix "-Moo"
+    var splitText = textValue.split("."); // ["Hello world"]
+    textValue = splitText.join("-Moo");       //["Hello world-Moo"]
+    document.getElementById("innerText").value = textValue;
 }
 

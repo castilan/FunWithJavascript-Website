@@ -21,6 +21,7 @@ function makeFancyOrBoring(typeChanged){
     else if(document.getElementById("boring").checked && typeChanged=='boring'){
         text.style.fontWeight = 'normal';
         text.style.color = 'black';
+        text.style.textDecoration = "underline";
         document.getElementById("fancy").checked = false;
     }
 }

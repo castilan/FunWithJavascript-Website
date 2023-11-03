@@ -8,17 +8,20 @@ function makeBigger(){
     document.getElementById("innerText").style.fontSize = '31.92px';
 }
 
-function makeFancyOrBoring(){
+function makeFancyOrBoring(typeChanged){
     const text = document.getElementById("innerText");
-    if(document.getElementById("fancy").checked){
+
+
+    if(document.getElementById("fancy").checked && typeChanged=='fancy'){
         text.style.fontWeight = 'bold';
         text.style.color = 'blue';
 
-        //document.getElementById("boring").checked = false;
+        document.getElementById("boring").checked = false;
     }
-    else if(document.getElementById("boring").checked){
+    else if(document.getElementById("boring").checked && typeChanged=='boring'){
         text.style.fontWeight = 'normal';
-        //document.getElementById("fancy").checked = false;
+        
+        document.getElementById("fancy").checked = false;
     }
 }
 

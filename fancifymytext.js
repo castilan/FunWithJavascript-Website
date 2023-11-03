@@ -20,7 +20,7 @@ function makeFancyOrBoring(typeChanged){
     }
     else if(document.getElementById("boring").checked && typeChanged=='boring'){
         text.style.fontWeight = 'normal';
-        
+        text.style.color = 'black';
         document.getElementById("fancy").checked = false;
     }
 }

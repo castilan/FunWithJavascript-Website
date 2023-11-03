@@ -15,14 +15,21 @@ function makeFancyOrBoring(typeChanged){
     if(document.getElementById("fancy").checked && typeChanged=='fancy'){
         text.style.fontWeight = 'bold';
         text.style.color = 'blue';
-        text.style.textDecoration = "underline";
+        text.style.textDecoration = 'underline';
         document.getElementById("boring").checked = false;
     }
     else if(document.getElementById("boring").checked && typeChanged=='boring'){
         text.style.fontWeight = 'normal';
         text.style.color = 'black';
-        text.style.textDecoration = "none";
+        text.style.textDecoration = 'none';
+
         document.getElementById("fancy").checked = false;
     }
+}
+
+function makeUpper(){
+
+    const textValue = document.getElementById("innerText").value;
+    document.getElementById("innerText").value = textValue.toUpperCase();
 }
 

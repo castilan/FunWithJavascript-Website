@@ -34,6 +34,8 @@ function makeMoo(){
     var textValue = document.getElementById("innerText").value;
     document.getElementById("innerText").value = textValue.toUpperCase();
 
+    //redeclares textValue to update it
+    var textValue = document.getElementById("innerText").value;
     // adds the suffix "-Moo"
     var splitText = textValue.split("."); // ["Hello world"]
     textValue = splitText.join("-Moo");       //["Hello world-Moo"]

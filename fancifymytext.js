@@ -15,13 +15,13 @@ function makeFancyOrBoring(typeChanged){
     if(document.getElementById("fancy").checked && typeChanged=='fancy'){
         text.style.fontWeight = 'bold';
         text.style.color = 'blue';
-
+        text.style.textDecoration = "underline";
         document.getElementById("boring").checked = false;
     }
     else if(document.getElementById("boring").checked && typeChanged=='boring'){
         text.style.fontWeight = 'normal';
         text.style.color = 'black';
-        text.style.textDecoration = "underline";
+        text.style.textDecoration = "none";
         document.getElementById("fancy").checked = false;
     }
 }

@@ -1,5 +1,5 @@
-
-
+//fancifymytext.js
+//Angelina Castillo
 
 //assigned to the Bigger button
 function makeBigger(){
@@ -12,14 +12,16 @@ function makeBigger(){
 function makeFancyOrBoring(typeChanged){
     const text = document.getElementById("innerText");
 
-
+    
     if(document.getElementById("fancy").checked && typeChanged=='fancy'){
+        alert("Text is fancy!");
         text.style.fontWeight = 'bold';
         text.style.color = 'blue';
         text.style.textDecoration = 'underline';
         document.getElementById("boring").checked = false;
     }
     else if(document.getElementById("boring").checked && typeChanged=='boring'){
+        alert("Text is boring..");
         text.style.fontWeight = 'normal';
         text.style.color = 'black';
         text.style.textDecoration = 'none';
